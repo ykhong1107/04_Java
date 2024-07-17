@@ -2,7 +2,6 @@ package condition.ex;
 
 import java.util.Scanner;
 
-import javax.swing.Spring;
 
 /**
  * 조건문 예시 기능용 클래스
@@ -292,22 +291,66 @@ public class ConditionEx {
 		int soc = sc.nextInt(); // 사
 		int sci = sc.nextInt(); // 과
 		
-		double sum = (kor + eng + mat + soc + sci) / 5;
+		// 40점 미만인 과목 검사
+		boolean flag = false;
+		String str = ""; // 빈칸(자료형 : String, 내용 X)
 		
-		System.out.println(sum);
-		
-		String result;
-		
-		if(40 > kor || 40 > eng || 40> mat || 40 > soc || 40 > sci){
-		result = "40점 미만 과목이 존재하는 경우 FAIL [40점 미만 과목 :";
-		}else if(40 < kor && 40 < eng && 40 < mat && 40 < soc && 40 < sci){}
-			
-		if(sum < 60 ) { result = "평균 60점 미만인 경우 FAIL [ 점수 : " + sum + "(평균 미달)";
-		}else  { result = "PASS인 경우 [ 점수 : " +sum +"/ 100 ]";
-			
+		if(kor < 40) {
+			flag = true;
+			str += "국어";
 		}
-			
-		System.out.println(result);
+		if(eng < 40) {
+			flag = true;
+			str += "영어 ";
+		}
+		if(mat < 40) {
+			flag = true;
+			str += "수학 ";
+		}
+		if(soc < 40) {
+			flag = true;
+			str += "사회 ";
+		}
+		if(soc < 40) {
+			flag = true;
+			str += "과학 ";
+		}
+		
+		// 40점 미만 과목이 존재하는 경우
+		if(flag) {
+			System.out.printf("FAIL [40점 미만 과목 : %s]", str );
+			return;
+		}
+		
+		// 평균(double 형 결과를 반환 받기 위해 5.0으로 나눔)
+		double avg = (kor + eng + mat + soc + sci) / 5.0; 
+		
+		if(avg < 60.0) {
+ 			System.out.printf("FAIL [점수 : %.1f (평균 미달)]", avg);
+ 			return; //  Early return; (중간에 메서드를 종료)
+ 		}
+ 		
+ 		System.out.printf("PASS [점수 : %.1f / 100]", avg);
+	
+		
+		
+		
+//		double sum = (kor + eng + mat + soc + sci) / 5;
+//		
+//		System.out.println(sum);
+//		
+//		String result;
+//		
+//		if(40 > kor || 40 > eng || 40> mat || 40 > soc || 40 > sci){
+//		result = "40점 미만 과목이 존재하는 경우 FAIL [40점 미만 과목 :";
+//		}if(40 < kor && 40 < eng && 40 < mat && 40 < soc && 40 < sci){
+//		result = "PASS";}
+//		if(sum < 60 ) { result = "평균 60점 미만인 경우 FAIL [ 점수 : " + sum + "(평균 미달)";
+//		}else  { result = "PASS인 경우 [ 점수 : " +sum +"/ 100 ]";
+//			
+//		}
+//			
+//		System.out.println(result);
 		
 		
 		
