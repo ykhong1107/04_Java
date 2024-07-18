@@ -1,6 +1,6 @@
 package basic;
 
-// 같은 패이지의 클래스는 inporrt
+// 같은 패키지의 클래스는 import X
 
 public class BasicRun {
 
