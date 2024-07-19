@@ -1,13 +1,13 @@
 package run;
 
-import ex.ArrayEx1;
+//import ex.ArrayEx1;
 import ex.ArrayEx2;
 
 public class ArrayRun {
 
 	public static void main(String[] args) {
 		
-		ArrayEx1 ex1 = new ArrayEx1();
+//		ArrayEx1 ex1 = new ArrayEx1();
 		
 //		ex1.method1();
 //		ex1.method2();
