@@ -55,7 +55,7 @@ public class LoopEx1 {
 			for(int i = a ; i <= b; i++) {
 				System.out.println(i);
 			}
-		}else { // b가 작거나 같은 경우
+		}else{ // b가 작거나 같은 경우
 			for(int i = b ; i <= a; i++) {
 				System.out.println(i);
 		}
@@ -158,7 +158,10 @@ public class LoopEx1 {
 		}
 		for(int i=1 ; i<=9 ; i++) {
 			System.out.printf("%d x %d = %d \n", input, i, (input*i) );
+			
 		}
+		
+	
 		
 	}
 	
@@ -212,8 +215,26 @@ public class LoopEx1 {
 			for(int i=1 ; i<=9 ; i++) {
 			System.out.printf("%d x %d = %d \n", input, i, (input*i) );
 		}
+			for (int i=0 ; i <10; i++) {
+				if(i==5) {
+					
+				}
+				System.out.println(i);
+			}
 	}
 	
+	
+	
+	public void method9() {
+		
+		for (int i=0 ; i <10; i++) {
+			if(i==5) {
+				return;
+			}
+			System.out.println(i);
+		}
+		System.out.println("하이루");
+	}
 	
 }
 

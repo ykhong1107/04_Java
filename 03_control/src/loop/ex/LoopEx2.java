@@ -189,8 +189,7 @@ public class LoopEx2 {
 		
 		int num = 10;
 		
-		 do{
-			System.out.println("반복 출력");
+		 do{ System.out.println("반복 출력");
 			
 		 }while(num < 10);
 		

@@ -9,7 +9,7 @@ import loop.ex.LoopEx2;
 public class LoopRun {
 	public static void main(String[] args) {
 		
-//		LoopEx1 ex1 = new LoopEx1();
+		LoopEx1 ex1 = new LoopEx1();
 		
 //		ex1.method1();
 //		ex1.method2();
@@ -19,6 +19,7 @@ public class LoopRun {
 //		ex1.method6();
 //		ex1.method7();
 //		ex1.method8();
+//		ex1.method9();
 		
 		LoopEx2 ex2 = new LoopEx2();
 //		ex2.method1();
