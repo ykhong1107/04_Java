@@ -38,5 +38,9 @@ public class Member implements Serializable{ // + 직렬화
 	
 	
 	
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> origin/main
 }

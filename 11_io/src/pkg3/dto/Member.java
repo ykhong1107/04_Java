@@ -32,6 +32,7 @@ public class Member implements Serializable{
 	// --> 마커 인터페이스(무슨 역할 / 대상임을 명시)
 	
 	
+<<<<<<< HEAD
 	
 	
 	private String id;
@@ -42,6 +43,9 @@ public class Member implements Serializable{
 		this.name = name;
 		this.age = age;
 	}
+=======
+	private String id;
+>>>>>>> origin/main
 	private String pw;
 	private String name;
 	private int age;

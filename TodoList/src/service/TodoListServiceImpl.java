@@ -1,20 +1,27 @@
 package service;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.List;
 
 =======
+=======
+>>>>>>> origin/main
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
 import dao.TodoListDao;
 import dao.TodoListDaoImpl;
+<<<<<<< HEAD
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+>>>>>>> origin/main
 import dto.Todo;
 
 public class TodoListServiceImpl implements TodoListService {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	@Override
 	public List<Todo> getTodoList() {
@@ -24,6 +31,8 @@ public class TodoListServiceImpl implements TodoListService {
 
 	
 =======
+=======
+>>>>>>> origin/main
 	private TodoListDao dao = null;
 	
 	public TodoListServiceImpl() throws FileNotFoundException, ClassNotFoundException, IOException {
@@ -45,6 +54,9 @@ public class TodoListServiceImpl implements TodoListService {
 		return null;
 	}
 	
+<<<<<<< HEAD
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+>>>>>>> origin/main
 	
 }

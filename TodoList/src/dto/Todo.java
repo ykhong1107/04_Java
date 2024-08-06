@@ -22,9 +22,12 @@ public class Todo implements Serializable{ // 직렬화
 	private String detail;			// 상세내용
 	private boolean complete;		// 완료여부
 	private LocalDateTime regDate;  // 등록날짜
+<<<<<<< HEAD
 	
 	
 	
+=======
+>>>>>>> origin/main
 
 	// java.time 패키지
 	// LocalDateTime : 날짜, 시간을 나타내는 클래스
@@ -35,5 +38,8 @@ public class Todo implements Serializable{ // 직렬화
 	//  String formattedDateTime = currentDateTime.format(formatter);
 	
 	
+<<<<<<< HEAD
 	
+=======
+>>>>>>> origin/main
 }

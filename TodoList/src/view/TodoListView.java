@@ -4,12 +4,18 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.List;
 =======
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Map;
+>>>>>>> origin/main
 
 import dto.Todo;
 import service.TodoListService;
@@ -21,6 +27,7 @@ public class TodoListView {
 	private BufferedReader br = null;
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	public TodoListView() {
 		try {
@@ -30,11 +37,17 @@ public class TodoListView {
 		
 		try {
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+	public TodoListView() {
+		
+		try {
+>>>>>>> origin/main
 			service = new TodoListServiceImpl();
 			
 			br = new BufferedReader(new InputStreamReader(System.in));
 			
 		}catch(Exception e) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			System.out.println("*** 프로그램 실행 중 오류 발생***");
 			e.printStackTrace();
@@ -46,6 +59,8 @@ public class TodoListView {
 	
 	public void mainMenu() {
 =======
+=======
+>>>>>>> origin/main
 			System.out.println("*** 프로그램 실행 중 오류 발생 ***");
 			e.printStackTrace();
 			System.exit(0);
@@ -56,11 +71,15 @@ public class TodoListView {
 	public void mainMenu() throws IOException {
 		
 		
+<<<<<<< HEAD
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+>>>>>>> origin/main
 		
 		int input = 0;
 		do {
 			
+<<<<<<< HEAD
 <<<<<<< HEAD
 			try {
 				
@@ -110,6 +129,8 @@ public class TodoListView {
 		System.out.println(" 6. Todo Delete");
 		System.out.println(" 0. EXIT");
 =======
+=======
+>>>>>>> origin/main
 			
 		try {
 			input = selectMenu();
@@ -155,11 +176,15 @@ public class TodoListView {
 		System.out.println("6. Todo Delete");
 		System.out.println("0. EXIT");
 		
+<<<<<<< HEAD
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+>>>>>>> origin/main
 		
 		System.out.print("select menu number >>>");
 		
 		
+<<<<<<< HEAD
 <<<<<<< HEAD
 		
 		int input = Integer.parseInt( br.readLine());
@@ -188,6 +213,8 @@ public class TodoListView {
 				todo.getRegDate(), todo.isComplete() );
 		
 =======
+=======
+>>>>>>> origin/main
 		int input = Integer.parseInt( br.readLine());
 		
 		return input;
@@ -222,13 +249,19 @@ public class TodoListView {
 			System.out.printf("[%3d] %20s (%s)  %s \n",
 							i, regDate, completeYN, title);
 			
+<<<<<<< HEAD
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+>>>>>>> origin/main
 		}
 		
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/main
 	// [3. 할일 추가]
 	private void addTodo() throws IOException {
 		System.out.println("============[3. Todo Add]===========");
@@ -242,7 +275,10 @@ public class TodoListView {
 		
 	}
 	
+<<<<<<< HEAD
 >>>>>>> 0eafb4db5eb1e157d695a0a93f7dc9681e64ae15
+=======
+>>>>>>> origin/main
 	
 	
 }
