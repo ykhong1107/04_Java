@@ -42,6 +42,7 @@ public class MemberServiceImpl implements MemberService{
 	public boolean addMember(String name, String phone) throws IOException {
 		
 		// 1) 회원 목록을 얻어와 휴대폰 번호 중복 검사
+		// 리스트 타입으로 반환받는 것
 		List<Member> memberList = dao.getMemberList();  
 		
 		for(Member member : memberList) {
